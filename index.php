@@ -1,448 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gardencare247 — The Essential Garden Tools & Equipment Guide</title>
-  <meta name="description" content="Gardencare247 is a practical, unsponsored field guide to essential garden tools and lawn care. Learn how to choose quality steel, sharpen pruners, care for wooden handles, and build a lasting kit.">
-  <meta name="keywords" content="Gardencare247, garden tools guide, lawn care, best gardening tools, bypass pruners, hand trowel, hori hori knife, spade, sharpening pruners, beginner gardening tools">
-  <meta name="author" content="Gardencare247 Editorial Team">
+  <title>Toplawncare247 — 24/7 Science-Backed Turf Intelligence & Care Guides</title>
+  <meta name="description"
+    content="Transform patchy, weed-infested grass into golf-course emerald turf with 24/7 round-the-clock guidance. Free seasonal lawn calendars, mowing height calculators, and complete homeowner turf blueprints.">
+  <meta name="keywords"
+    content="lawn care guide, green lawn, bermuda grass, tall fescue, kentucky bluegrass, lawn fertilizer schedule, weed control, mowing height calculator, toplawncare247, 24/7 lawn care">
+  <meta name="author" content="Toplawncare247">
 
-  <!-- Open Graph / Meta -->
-  <meta property="og:title" content="Gardencare247 — The Essential Garden Tools Field Guide">
-  <meta property="og:description" content="A practical guide to buying, using, and caring for garden tools that last a lifetime.">
+  <!-- Open Graph / Social Meta -->
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/hero-tools.jpg">
+  <meta property="og:title" content="Toplawncare247 — 24/7 Science-Backed Turf Intelligence & Care Guides">
+  <meta property="og:description"
+    content="The definitive round-the-clock homeowner guide to lush, deep emerald, weed-free turf in any climate.">
+  <meta property="og:image" content="assets/images/hero-toplawn.jpg">
 
-  <!-- Google Fonts: Natural Editorial Serif + Readable Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Favicon SVG -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23059669%22><path d=%22M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-4h2v4z%22/></svg>">
 
-  <link rel="stylesheet" href="styles.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/modals.css">
 </head>
+
 <body>
-  <!-- Top Editorial Bar -->
-  <aside class="announcement-bar" aria-label="Seasonal garden note">
-    <div class="container announcement-content">
-      <span class="announcement-tag">Seasonal Note</span>
-      <p class="announcement-text">
-        <strong>Spring & Autumn Maintenance:</strong> Clean soil off blades, hone pruners at 20°, and oil wooden handles to prevent splitting.
-      </p>
-      <a href="#maintenance" class="announcement-link">Read tool care guide &rarr;</a>
-    </div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="bg-ambient-grid" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-announcement" aria-label="Seasonal Announcement">
+    <span>🌱 <strong>Spring 2026 24/7 Turf Blueprint:</strong> Real-time soil temp triggers & pre-emergent window
+      updates!</span>
+    <a href="#calculator" id="announcementCta">Check Your Grass &rarr;</a>
   </aside>
 
-  <!-- Navigation Header -->
-  <header class="site-header" id="header">
-    <div class="container header-container">
-      <a href="#" class="brand-logo" aria-label="Gardencare247 Home">
-        <div class="logo-mark">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2a9 9 0 0 1 9 9c0 4.97-4.03 9-9 9A9 9 0 0 1 3 11c0-4.97 4.03-9 9-9Z"/>
-            <path d="M12 7v10"/>
-            <path d="M8 12c2-2 4-2 4-2s2 0 4 2"/>
-            <path d="M8 16c2-1 4-1 4-1s2 0 4 1"/>
+  <!-- Floating Sticky Navigation -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="#" class="brand-logo" aria-label="Toplawncare247 Homepage">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V6m0 0l-4 4m4-4l4 4M5 21h14" />
           </svg>
         </div>
-        <div class="logo-text">
-          <span class="logo-title">Gardencare247</span>
-          <span class="logo-sub">Essential Tools & Practical Care</span>
+        <div class="brand-text">
+          <div class="brand-name">TopLawnCare<span>247</span></div>
+          <span class="brand-tagline">24/7 Turf Science & Master Guide</span>
         </div>
       </a>
 
-      <nav class="desktop-nav" aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="#essentials" class="nav-link">Tool Guide</a></li>
-          <li><a href="#matcher" class="nav-link">Starter Kits</a></li>
-          <li><a href="#metallurgy" class="nav-link">Steel & Quality</a></li>
-          <li><a href="#maintenance" class="nav-link">Care & Sharpening</a></li>
-          <li><a href="#checklist" class="nav-link">Shed Checklist</a></li>
-          <li><a href="#faq" class="nav-link">FAQ</a></li>
-        </ul>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#calculator" class="nav-link">Lawn Prescription</a>
+        <a href="#comparison" class="nav-link">Before & After</a>
+        <a href="#pillars" class="nav-link">The 4 Pillars</a>
+        <a href="#seasons" class="nav-link">Seasonal Calendar</a>
+        <a href="#handbook" class="nav-link">Field Guide</a>
+        <a href="#faq" class="nav-link">FAQ</a>
       </nav>
 
-      <div class="header-actions">
-        <button id="shedDrawerBtn" class="btn-shed" aria-label="Open your saved tools list">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <path d="M16 10a4 4 0 0 1-8 0"/>
+      <div class="nav-actions">
+        <a href="#newsletter" class="btn btn-sm btn-primary">
+          <span>Get Free Blueprint</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
-          <span>My Shed</span>
-          <span class="shed-badge" id="shedCountBadge">0</span>
-        </button>
-
-        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+        </a>
+        <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
       </div>
-    </div>
-
-    <!-- Mobile Nav Drawer -->
-    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
-      <ul class="mobile-nav-links">
-        <li><a href="#essentials" class="mobile-link">Tool Guide</a></li>
-        <li><a href="#matcher" class="mobile-link">Starter Kits</a></li>
-        <li><a href="#metallurgy" class="mobile-link">Steel & Quality</a></li>
-        <li><a href="#maintenance" class="mobile-link">Care & Sharpening</a></li>
-        <li><a href="#checklist" class="mobile-link">Shed Checklist</a></li>
-        <li><a href="#faq" class="mobile-link">FAQ</a></li>
-        <li class="mobile-divider"></li>
-        <li><button class="modal-trigger mobile-link text-btn" data-modal="privacyModal">Privacy Policy</button></li>
-        <li><button class="modal-trigger mobile-link text-btn" data-modal="termsModal">Terms of Service</button></li>
-      </ul>
     </div>
   </header>
 
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-nav-content">
+      <div class="mobile-nav-header">
+        <div class="brand-name">TopLawnCare<span>247</span></div>
+        <button class="modal-close-btn mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#calculator">Lawn Prescription <span>&rarr;</span></a></li>
+        <li><a href="#comparison">Before & After Results <span>&rarr;</span></a></li>
+        <li><a href="#pillars">The 4 Science Pillars <span>&rarr;</span></a></li>
+        <li><a href="#seasons">Seasonal Timeline <span>&rarr;</span></a></li>
+        <li><a href="#handbook">Master Field Guide <span>&rarr;</span></a></li>
+        <li><a href="#faq">Frequently Asked Questions <span>&rarr;</span></a></li>
+      </ul>
+      <div style="margin-top: 2rem;">
+        <a href="#newsletter" class="btn btn-primary" style="width: 100%;">Download Free Calendar</a>
+      </div>
+    </div>
+  </div>
+
   <main id="main-content">
     <!-- Hero Section -->
-    <section class="hero-section" id="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="editorial-eyebrow">
-            <span class="eyebrow-line"></span>
-            <span>Expert Garden Care &amp; Heirloom Equipment</span>
-          </div>
-
-          <h1 class="hero-heading">
-            Master Garden Care with Implements Built for a Lifetime.
-          </h1>
-
-          <p class="hero-description">
-            Great gardens aren't grown with disposable plastic and stamped tin. At <strong>Gardencare247</strong>, we provide rigorous field guides, high-carbon metallurgy reviews, and seasonal restoration techniques so your garden flourishes and your tools last generations.
-          </p>
-
-          <div class="hero-cta-group">
-            <a href="#essentials" class="btn btn-primary">
-              <span>Explore 24 Essential Care Tools</span>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="#matcher" class="btn btn-outline">
-              <span>Find Your Custom Kit</span>
-            </a>
-          </div>
-
-          <div class="hero-badges">
-            <div class="hero-badge-item">
-              <span class="badge-num">24</span>
-              <span class="badge-txt">Field-proven implements</span>
-            </div>
-            <div class="hero-badge-divider"></div>
-            <div class="hero-badge-item">
-              <span class="badge-num">100%</span>
-              <span class="badge-txt">Independent care tests</span>
-            </div>
-            <div class="hero-badge-divider"></div>
-            <div class="hero-badge-item">
-              <span class="badge-num">25+ Yrs</span>
-              <span class="badge-txt">Heirloom durability standard</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hero Visual Showcase -->
-        <div class="hero-visual">
-          <figure class="hero-figure">
-            <img src="assets/hero-tools.jpg" alt="Classic gardener's workbench with bypass pruners, steel hand trowel, hori-hori knife, seedling pot, and leather gloves" class="hero-img" loading="eager" fetchpriority="high">
-            
-            <!-- Editorial Interactive Hotspots -->
-            <div class="image-hotspot spot-1" tabindex="0" role="button" aria-label="Bypass Pruners">
-              <span class="hotspot-pin">1</span>
-              <div class="hotspot-tooltip">
-                <strong>Bypass Pruners</strong>
-                <span>Scissor action for clean cuts on living stems</span>
-              </div>
-            </div>
-
-            <div class="image-hotspot spot-2" tabindex="0" role="button" aria-label="Forged Hand Trowel">
-              <span class="hotspot-pin">2</span>
-              <div class="hotspot-tooltip">
-                <strong>Forged Hand Trowel</strong>
-                <span>Solid socket construction with ash handle</span>
-              </div>
-            </div>
-
-            <div class="image-hotspot spot-3" tabindex="0" role="button" aria-label="Hori-Hori Knife">
-              <span class="hotspot-pin">3</span>
-              <div class="hotspot-tooltip">
-                <strong>Japanese Hori-Hori Knife</strong>
-                <span>Digs, weeds, divides roots, and measures depth</span>
-              </div>
-            </div>
-
-            <figcaption class="hero-caption">
-              <span>Figure 1.0</span> The Gardencare247 signature kit: high-carbon pruners, forged trowel, hori-hori knife, and durable leather gauntlets. Tap pins for care details.
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Starter Kit Finder (Practical Tool Matcher) -->
-    <section class="matcher-section" id="matcher">
+    <section class="hero-section" aria-labelledby="hero-title">
       <div class="container">
-        <div class="section-intro text-center">
-          <span class="section-kicker">Interactive Starter Guide</span>
-          <h2 class="section-title">Find Your Essential Garden Kit</h2>
-          <p class="section-sub">
-            You don't need a shed full of gadgets. Select your garden size and primary task to see the 4 to 6 foundational tools you actually need.
-          </p>
-        </div>
-
-        <div class="matcher-card">
-          <div class="matcher-steps-wrapper">
-            <!-- Step 1 -->
-            <div class="quiz-step">
-              <span class="step-num">Step 1</span>
-              <h3 class="step-title">Where do you grow?</h3>
-              <div class="quiz-options-list">
-                <button type="button" class="quiz-option-btn" data-category="space" data-value="balcony">
-                  <div class="quiz-btn-left">
-                    <span class="option-title">Balcony & Pots</span>
-                    <span class="option-desc">Containers, window boxes, and small patios</span>
-                  </div>
-                  <span class="radio-indicator"></span>
-                </button>
-                <button type="button" class="quiz-option-btn selected" data-category="space" data-value="raised-bed">
-                  <div class="quiz-btn-left">
-                    <span class="option-title">Raised Beds & Urban Plots</span>
-                    <span class="option-desc">Enclosed timber or metal garden beds</span>
-                  </div>
-                  <span class="radio-indicator"></span>
-                </button>
-                <button type="button" class="quiz-option-btn" data-category="space" data-value="homestead">
-                  <div class="quiz-btn-left">
-                    <span class="option-title">Large Yard & Orchard</span>
-                    <span class="option-desc">In-ground rows, fruit trees, and perennial borders</span>
-                  </div>
-                  <span class="radio-indicator"></span>
-                </button>
-              </div>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="section-badge">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>24/7 Real-Time Turf Intelligence</span>
             </div>
-
-            <!-- Step 2 -->
-            <div class="quiz-step">
-              <span class="step-num">Step 2</span>
-              <h3 class="step-title">What is your main focus?</h3>
-              <div class="quiz-options-list">
-                <button type="button" class="quiz-option-btn selected" data-category="focus" data-value="edibles">
-                  <div class="quiz-btn-left">
-                    <span class="option-title">Vegetables & Culinary Herbs</span>
-                    <span class="option-desc">Frequent soil preparation, planting, and harvesting</span>
-                  </div>
-                  <span class="radio-indicator"></span>
-                </button>
-                <button type="button" class="quiz-option-btn" data-category="focus" data-value="flowers">
-                  <div class="quiz-btn-left">
-                    <span class="option-title">Flowers & Ornamentals</span>
-                    <span class="option-desc">Pruning roses, deadheading, dividing bulbs and perennials</span>
-                  </div>
-                  <span class="radio-indicator"></span>
-                </button>
-                <button type="button" class="quiz-option-btn" data-category="focus" data-value="trees">
-                  <div class="quiz-btn-left">
-                    <span class="option-title">Fruit Trees, Shrubs & Wood</span>
-                    <span class="option-desc">Heavier seasonal branch lopping, sawing, and shaping</span>
-                  </div>
-                  <span class="radio-indicator"></span>
-                </button>
-              </div>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="quiz-step">
-              <span class="step-num">Step 3</span>
-              <h3 class="step-title">Your buying approach?</h3>
-              <div class="quiz-options-list">
-                <button type="button" class="quiz-option-btn" data-category="tier" data-value="starter">
-                  <div class="quiz-btn-left">
-                    <span class="option-title">Lean Starter Set</span>
-                    <span class="option-desc">Under $100, lightweight, covers the fundamentals</span>
-                  </div>
-                  <span class="radio-indicator"></span>
-                </button>
-                <button type="button" class="quiz-option-btn selected" data-category="tier" data-value="heirloom">
-                  <div class="quiz-btn-left">
-                    <span class="option-title">Lifetime Quality</span>
-                    <span class="option-desc">Forged carbon steel, ash handles, fully re-sharpenable</span>
-                  </div>
-                  <span class="radio-indicator"></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Recommendation Box -->
-          <div class="quiz-result-box" id="quizResultBox">
-            <div class="result-header">
-              <span class="result-pill">Recommended Kit</span>
-              <h3 class="result-title" id="kitResultTitle">The Raised Bed Kitchen Cultivator Kit</h3>
-              <p class="result-desc" id="kitResultDesc">
-                Designed for turning compost, transplanting seedlings, eliminating weeds cleanly at the root, and daily harvesting.
-              </p>
-              <div class="result-tags" id="kitResultTags">
-                <span class="tag">4 Essential Tools</span>
-                <span class="tag">Estimated Cost: $110 - $160</span>
-                <span class="tag">Lifespan: 20+ Years with Basic Care</span>
-              </div>
-            </div>
-
-            <div class="result-tools-preview" id="kitToolsPreview">
-              <!-- Dynamically populated -->
-            </div>
-
-            <div class="result-actions">
-              <button type="button" class="btn btn-primary" id="addKitToShedBtn">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-                <span>Add This Kit to My Shed</span>
-              </button>
-              <a href="#essentials" class="btn btn-secondary">Review Individual Tool Specs</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Main Tool Catalog -->
-    <section class="essentials-section" id="essentials">
-      <div class="container">
-        <div class="section-intro flex-between">
-          <div>
-            <span class="section-kicker">Field Guide</span>
-            <h2 class="section-title">The 24 Essential Garden Tools</h2>
-            <p class="section-sub">
-              Every tool is detailed with steel specifications, handle construction, ergonomic ratings, and honest upkeep notes.
+            <h1 id="hero-title">
+              Round-The-Clock Science For <span class="text-gradient">Flawless Emerald Turf</span>.
+            </h1>
+            <p class="hero-subtitle">
+              From 5:00 AM dew-prevention hydration to deep root aeration, Toplawncare247 delivers 24/7 season-by-season
+              agronomic blueprints, soil-temperature triggers, and precision schedules engineered for your exact lawn.
             </p>
-          </div>
-          <div class="search-wrap">
-            <div class="search-input-box">
-              <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-              <input type="text" id="toolSearchInput" placeholder="Search by tool name, steel, or use..." aria-label="Search tools">
-              <button class="search-clear-btn" id="searchClearBtn" aria-label="Clear search input">&times;</button>
-            </div>
-          </div>
-        </div>
 
-        <!-- Filter Tabs -->
-        <div class="filter-bar">
-          <div class="category-tabs" role="tablist" aria-label="Tool Categories">
-            <button class="cat-tab active" data-cat="all" role="tab" aria-selected="true">All Tools (24)</button>
-            <button class="cat-tab" data-cat="digging" role="tab" aria-selected="false">Digging & Soil Prep</button>
-            <button class="cat-tab" data-cat="pruning" role="tab" aria-selected="false">Pruning & Cutting</button>
-            <button class="cat-tab" data-cat="weeding" role="tab" aria-selected="false">Weeding & Aeration</button>
-            <button class="cat-tab" data-cat="watering" role="tab" aria-selected="false">Watering & Soil Testing</button>
-            <button class="cat-tab" data-cat="protection" role="tab" aria-selected="false">Protection & Hauling</button>
-          </div>
-
-          <div class="sort-wrap">
-            <label for="toolSortSelect" class="sort-label">Order by:</label>
-            <select id="toolSortSelect" class="sort-select">
-              <option value="essential">Essential Priority</option>
-              <option value="durability">Durability Rating</option>
-              <option value="name">Alphabetical (A-Z)</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="filter-status" id="filterStatusText">
-          Showing <strong>24 tools</strong> across all categories
-        </div>
-
-        <!-- Tool Cards Grid -->
-        <div class="tools-grid" id="toolsGrid">
-          <!-- Dynamically populated via app.js -->
-        </div>
-
-        <!-- Empty Search Fallback -->
-        <div class="empty-state hidden" id="toolsEmptyState">
-          <h3>No matching garden tools found</h3>
-          <p>Try searching for terms like "trowel", "pruner", "carbon steel", "hoe", or "gloves".</p>
-          <button class="btn btn-secondary" id="resetSearchBtn">Clear Filter & Search</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Metallurgy & Anatomy Guide -->
-    <section class="metallurgy-section" id="metallurgy">
-      <div class="container">
-        <div class="section-intro text-center">
-          <span class="section-kicker">Material Guide</span>
-          <h2 class="section-title">How to Spot Quality in Garden Tools</h2>
-          <p class="section-sub">
-            The difference between a tool that lasts 25 years and one that bends in wet clay comes down to two things: blade metallurgy and socket joinery.
-          </p>
-        </div>
-
-        <div class="steel-grid">
-          <div class="steel-card recommended-card">
-            <div class="steel-header">
-              <span class="steel-tag">Recommended for Cutting</span>
-              <h3>High-Carbon Steel (SK-5 / 1095)</h3>
-            </div>
-            <p class="steel-desc">Japanese carbon steel hardened to 58-60 HRC. The gold standard for bypass pruners, garden knives, and pruning saws.</p>
-            <ul class="steel-points">
-              <li><strong>Edge Retention:</strong> Excellent. Takes a razor-sharp bevel that cuts green stems without crushing bark.</li>
-              <li><strong>Easy to Resharpen:</strong> Hones quickly with an inexpensive diamond paddle or waterstone.</li>
-              <li><strong>Care Required:</strong> Will develop surface rust if left in damp soil. Wipe dry and oil monthly.</li>
-            </ul>
-            <div class="steel-verdict"><strong>Best for:</strong> Bypass pruners, floral snips, Hori-Hori knives.</div>
-          </div>
-
-          <div class="steel-card">
-            <div class="steel-header">
-              <span class="steel-tag">Low Maintenance</span>
-              <h3>Forged Stainless Steel (420 / 440C)</h3>
-            </div>
-            <p class="steel-desc">Contains 13%+ chromium to prevent rust and corrosion in damp climates or clay soils.</p>
-            <ul class="steel-points">
-              <li><strong>Rust Resistance:</strong> Will not corrode even if left outside occasionally.</li>
-              <li><strong>Soil Release:</strong> Sticky clay slides right off mirror-polished surfaces.</li>
-              <li><strong>Trade-Off:</strong> Harder to sharpen to an ultra-fine edge compared to carbon steel.</li>
-            </ul>
-            <div class="steel-verdict"><strong>Best for:</strong> Hand trowels, border spades, weeding forks.</div>
-          </div>
-
-          <div class="steel-card warning-card">
-            <div class="steel-header">
-              <span class="steel-tag danger-tag">What to Avoid</span>
-              <h3>Stamped Sheet Metal & Spot Welds</h3>
-            </div>
-            <p class="steel-desc">Common in discount retail stores. Punched from thin metal sheets with painted coatings that hide weak welds.</p>
-            <ul class="steel-points">
-              <li><strong>Bends Under Torque:</strong> The neck snaps under the leverage of heavy roots or rocks.</li>
-              <li><strong>Cannot Hold an Edge:</strong> Soft steel dulls within hours of contact with soil.</li>
-              <li><strong>Landfill Traps:</strong> Costs $10, breaks in month three, and must be replaced repeatedly.</li>
-            </ul>
-            <div class="steel-verdict text-danger"><strong>Advice:</strong> Always look for forged, solid-socket heads.</div>
-          </div>
-        </div>
-
-        <!-- Bypass vs Anvil Comparison -->
-        <div class="comparison-panel">
-          <div class="comparison-header">
-            <h3>Bypass vs. Anvil Pruners: Which Do You Need?</h3>
-            <p>Using the wrong pruner crushes living bark and introduces fungal diseases.</p>
-          </div>
-
-          <div class="comparison-grid">
-            <div class="comp-col">
-              <span class="comp-badge bypass-badge">Bypass Pruners</span>
-              <h4>For Living, Green Stems</h4>
-              <p>Works like a pair of heavy scissors: a sharp curved blade glides past a hooked counter-blade. Leaves a clean, crisp cut that heals quickly.</p>
-              <div class="comp-rule">
-                <strong>Rule of Thumb:</strong> If the branch is alive and green inside, always use bypass pruners.
+            <div class="hero-highlights">
+              <div class="hero-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span>24/7 Soil Temp Alerts</span>
+              </div>
+              <div class="hero-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Species-Specific Mowing</span>
+              </div>
+              <div class="hero-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Zero Chemical Waste</span>
               </div>
             </div>
 
-            <div class="comp-col">
-              <span class="comp-badge anvil-badge">Anvil Pruners</span>
-              <h4>For Dead, Brittle Wood</h4>
-              <p>A straight knife edge closes squarely against a flat soft metal plate. Crushes stems, which is fine for dry, dead branches where clean vascular healing is irrelevant.</p>
-              <div class="comp-rule">
-                <strong>Rule of Thumb:</strong> Never use anvil pruners on roses, fruit trees, or living perennials.
+            <div class="hero-cta-group">
+              <a href="#calculator" class="btn btn-lg btn-primary" id="heroStartBtn">
+                <span>Get Instant 24/7 Plan</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+              <a href="#comparison" class="btn btn-lg btn-secondary">
+                <span>View 42-Day Results</span>
+              </a>
+            </div>
+
+            <div class="hero-proof-bar">
+              <div class="proof-avatars" aria-hidden="true">
+                <div class="proof-avatar">TL</div>
+                <div class="proof-avatar">MR</div>
+                <div class="proof-avatar">SK</div>
+                <div class="proof-avatar">24/7</div>
+              </div>
+              <div class="proof-text">
+                <div class="proof-stars" aria-label="5 star rating">
+                  <svg viewBox="0 0 20 20">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <p><strong>4.9/5 from 4,800+ homeowners</strong> • 24/7 Turf Monitoring</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Media Showcase with Real Generated Asset -->
+          <div class="hero-media-wrapper">
+            <div class="hero-image-card">
+              <img src="assets/images/hero-toplawn.jpg"
+                alt="Championship golf-green luxury estate lawn with morning mist irrigation and sharp striping"
+                width="600" height="375" fetchpriority="high">
+            </div>
+
+            <!-- Live Telemetry Badges -->
+            <div class="telemetry-card top-right">
+              <div class="telemetry-icon green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+                </svg>
+              </div>
+              <div class="telemetry-meta">
+                <span class="telemetry-label">24/7 Soil Temp</span>
+                <span class="telemetry-val">58°F Optimal</span>
+              </div>
+            </div>
+
+            <div class="telemetry-card bottom-left">
+              <div class="telemetry-icon blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" />
+                </svg>
+              </div>
+              <div class="telemetry-meta">
+                <span class="telemetry-label">Hydration Target</span>
+                <span class="telemetry-val">1.25" / Wk (Dawn Cycle)</span>
               </div>
             </div>
           </div>
@@ -450,223 +227,944 @@
       </div>
     </section>
 
-    <!-- Care, Honing & Maintenance Guide -->
-    <section class="maintenance-section" id="maintenance">
+    <!-- Interactive Diagnostic / Prescription Section -->
+    <section class="diagnostic-section" id="calculator" aria-labelledby="calc-section-title">
       <div class="container">
-        <div class="section-intro text-center">
-          <span class="section-kicker">Practical Workshop</span>
-          <h2 class="section-title">The 10-Minute Monthly Tool Care Ritual</h2>
-          <p class="section-sub">
-            Clean, sharp tools take 50% less physical effort to use and keep your plants healthy. Here is the straightforward maintenance routine we recommend.
-          </p>
+        <div class="section-header">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Custom Agronomic Engine</span>
+          </div>
+          <h2 id="calc-section-title">Your Custom Lawn Prescription</h2>
+          <p>Every lawn requires a different protocol. Select your grass variety and yard specs below to get immediate
+            scientific mowing heights, irrigation volume, and fertilizer schedules.</p>
         </div>
 
-        <div class="maintenance-layout">
-          <div class="maintenance-photo-col">
-            <figure class="workshop-figure">
-              <img src="assets/tool-care.jpg" alt="Gardener carefully sharpening pruning shears on wooden potting bench with whetstone and camellia oil" class="workshop-img" loading="lazy">
-              <figcaption>
-                <strong>Sharpening on the Bench:</strong> A light 60-second touch-up with a fine diamond paddle preserves cutting bevels and stops bark tearing.
-              </figcaption>
-            </figure>
+        <div class="calculator-card">
+          <!-- Controls Column -->
+          <div class="calculator-controls">
+            <div class="step-title">
+              <span class="step-num">1</span>
+              <span>Select Your Grass Species</span>
+            </div>
+            <div class="grass-selector-grid" role="radiogroup" aria-label="Select Grass Variety">
+              <button type="button" class="grass-chip-btn active" data-grass="fescue" aria-checked="true" role="radio">
+                <span class="grass-chip-name">Tall Fescue</span>
+                <span class="grass-chip-zone">Transition / North</span>
+              </button>
+              <button type="button" class="grass-chip-btn" data-grass="kbg" aria-checked="false" role="radio">
+                <span class="grass-chip-name">Kentucky Blue</span>
+                <span class="grass-chip-zone">Cool North</span>
+              </button>
+              <button type="button" class="grass-chip-btn" data-grass="bermuda" aria-checked="false" role="radio">
+                <span class="grass-chip-name">Bermuda</span>
+                <span class="grass-chip-zone">Warm South</span>
+              </button>
+              <button type="button" class="grass-chip-btn" data-grass="zoysia" aria-checked="false" role="radio">
+                <span class="grass-chip-name">Zoysia</span>
+                <span class="grass-chip-zone">Transition / South</span>
+              </button>
+              <button type="button" class="grass-chip-btn" data-grass="staugustine" aria-checked="false" role="radio">
+                <span class="grass-chip-name">St. Augustine</span>
+                <span class="grass-chip-zone">Gulf Coast / FL</span>
+              </button>
+              <button type="button" class="grass-chip-btn" data-grass="rye" aria-checked="false" role="radio">
+                <span class="grass-chip-name">Perennial Rye</span>
+                <span class="grass-chip-zone">Pacific NW / Cool</span>
+              </button>
+            </div>
+
+            <div class="calc-input-group">
+              <div class="step-title">
+                <span class="step-num">2</span>
+                <span>Yard Footprint Area</span>
+              </div>
+              <div class="calc-label">
+                <span>Estimated Lawn Area:</span>
+                <strong id="yardSizeDisplay">5,000 sq ft</strong>
+              </div>
+              <input type="range" class="calc-range" id="yardSizeRange" min="1000" max="25000" step="500" value="5000"
+                aria-label="Lawn square footage slider">
+            </div>
+
+            <div class="calc-input-group">
+              <div class="step-title">
+                <span class="step-num">3</span>
+                <span>Sunlight Exposure</span>
+              </div>
+              <div class="options-pill-grid">
+                <button type="button" class="pill-option-btn active" data-sun="full">Full Sun (6+ hrs)</button>
+                <button type="button" class="pill-option-btn" data-sun="partial">Partial Sun</button>
+                <button type="button" class="pill-option-btn" data-sun="shade">Dense Shade</button>
+              </div>
+            </div>
           </div>
 
-          <div class="maintenance-steps-col">
-            <div class="ritual-step">
-              <span class="step-badge">1</span>
-              <div>
-                <h4>Scrape Dirt & Disinfect</h4>
-                <p>Scrub dried soil with a brass brush. Wipe cutting blades with rubbing alcohol or a mild bleach solution to prevent spreading bacterial canker or mosaic virus between plants.</p>
+          <!-- Dynamic Results Column -->
+          <div class="calculator-results">
+            <div class="calc-bg-pattern"></div>
+            <div>
+              <span class="results-header-badge" id="resTypeBadge">Cool-Season Turf</span>
+              <h3 class="results-grass-title" id="resGrassTitle">Tall Fescue</h3>
+              <p style="color: #a7f3d0; font-size: 0.9rem;" id="resZone">Transition & Mid-Atlantic Zone</p>
+
+              <div class="results-prescription-grid">
+                <div class="prescription-card">
+                  <div class="presc-label">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M12 20V10M18 20V4M6 20v-4" />
+                    </svg>
+                    <span>Mow Height</span>
+                  </div>
+                  <div class="presc-val" id="resMowHeight">3.5 – 4.0 in</div>
+                  <div class="presc-sub">Prevents crabgrass germination by shading soil</div>
+                </div>
+
+                <div class="prescription-card">
+                  <div class="presc-label">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" />
+                    </svg>
+                    <span>Irrigation Target</span>
+                  </div>
+                  <div class="presc-val" id="resWater">1.25 in / wk</div>
+                  <div class="presc-sub">Deep soak 2x per week at dawn (5:30 AM)</div>
+                </div>
+
+                <div class="prescription-card">
+                  <div class="presc-label">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M12 3v18M3 12h18" />
+                    </svg>
+                    <span>Annual Nitrogen</span>
+                  </div>
+                  <div class="presc-val" id="resFertilizer">3.0 lbs N / 1k sq ft</div>
+                  <div class="presc-sub">Feed 70% in September/October root season</div>
+                </div>
+
+                <div class="prescription-card">
+                  <div class="presc-label">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Turf Superpower</span>
+                  </div>
+                  <div class="presc-val" style="font-size: 0.925rem; font-weight: 600;" id="resFeature">Remarkable heat
+                    tolerance and deep root system</div>
+                </div>
+              </div>
+
+              <div class="alert-callout">
+                <div class="alert-callout-title" id="resThreatTitle">Warning: Brown Patch Fungus in humid July nights
+                </div>
+                <div class="alert-callout-text" id="resThreatText">Annual overseeding every September; avoid evening
+                  sprinkler sessions.</div>
               </div>
             </div>
 
-            <div class="ritual-step">
-              <span class="step-badge">2</span>
-              <div>
-                <h4>Hone the Factory 20° Bevel</h4>
-                <p>Use a medium diamond file or whetstone on the beveled side only. Match the existing factory angle (usually 20° to 23°). Never sharpen the flat back side—only remove the burr with one gentle swipe.</p>
-              </div>
-            </div>
-
-            <div class="ritual-step">
-              <span class="step-badge">3</span>
-              <div>
-                <h4>Condition Ash Handles</h4>
-                <p>Wooden handles dry out in sun and rain. Lightly rub boiled linseed oil or beeswax paste into the wood once in spring and once in autumn to prevent splinters and rot.</p>
-              </div>
-            </div>
-
-            <div class="ritual-step">
-              <span class="step-badge">4</span>
-              <div>
-                <h4>Apply a Light Oil Coat</h4>
-                <p>Wipe steel blades and pivot bolts with a few drops of natural camellia oil or mineral oil. Avoid WD-40, which evaporates quickly and attracts sticky dirt into tool springs.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bevel Angles Reference Table -->
-        <div class="table-card">
-          <h3>Sharpening Angles at a Glance</h3>
-          <div class="table-wrap">
-            <table class="reference-table">
-              <thead>
-                <tr>
-                  <th>Tool Type</th>
-                  <th>Recommended Angle</th>
-                  <th>Best Sharpening Tool</th>
-                  <th>How Often</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Bypass Pruners</strong></td>
-                  <td>20° (Single Bevel)</td>
-                  <td>Fine Diamond Paddle (600 Grit)</td>
-                  <td>Every 4 to 6 gardening sessions</td>
-                </tr>
-                <tr>
-                  <td><strong>Garden Spades & Edgers</strong></td>
-                  <td>45° (Single Outer Bevel)</td>
-                  <td>Single-Cut Bastard File</td>
-                  <td>Twice a season (Spring & Autumn)</td>
-                </tr>
-                <tr>
-                  <td><strong>Hori-Hori Knife</strong></td>
-                  <td>25° Straight / Tapered Serrated</td>
-                  <td>Diamond Rod / Medium Stone</td>
-                  <td>Monthly during peak planting</td>
-                </tr>
-                <tr>
-                  <td><strong>Push Hoes / Stirrup Hoes</strong></td>
-                  <td>30° - 35° Double Bevel</td>
-                  <td>Carborundum Whetstone</td>
-                  <td>Every couple weeks for effortless weed slicing</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Shed Inventory Checklist -->
-    <section class="checklist-section" id="checklist">
-      <div class="container">
-        <div class="section-intro text-center">
-          <span class="section-kicker">Interactive Planner</span>
-          <h2 class="section-title">Your Garden Shed Inventory</h2>
-          <p class="section-sub">
-            Track what you already own and what you still need for the season. Automatically saved in your browser.
-          </p>
-        </div>
-
-        <div class="checklist-card">
-          <div class="checklist-controls">
-            <div class="progress-box">
-              <div class="progress-info">
-                <span class="progress-label">Shed Readiness:</span>
-                <span class="progress-value" id="readinessPercentage">0% Prepared</span>
-              </div>
-              <div class="progress-bar-track">
-                <div class="progress-bar-fill" id="readinessBar" style="width: 0%"></div>
-              </div>
-            </div>
-
-            <div class="checklist-btn-group">
-              <button class="btn btn-sm btn-outline" id="markAllBtn">Select All</button>
-              <button class="btn btn-sm btn-outline" id="clearAllBtn">Reset</button>
-              <button class="btn btn-sm btn-primary" id="copyChecklistBtn">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-                <span>Copy Checklist</span>
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 1.25rem;">
+              <p style="font-size: 0.825rem; color: #a7f3d0; margin-bottom: 0.75rem;" id="resSeedEstimate">
+                <strong>Yard Size:</strong> 5,000 sq ft • <strong>Overseed Needs:</strong> ~35 lbs •
+                <strong>Irrigation:</strong> ~3,890 gal/wk
+              </p>
+              <button class="btn btn-gold" id="getCustomPlanBtn" style="width: 100%;">
+                <span>Email My 52-Week Schedule</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
               </button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="checklist-items-grid" id="interactiveChecklist">
-            <!-- Dynamically populated via app.js -->
+    <!-- Interactive Before & After Restoration Slider -->
+    <section class="comparison-section" id="comparison" aria-labelledby="comp-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>Real Homeowner Case Study</span>
+          </div>
+          <h2 id="comp-title">Slide To See The 42-Day Restoration</h2>
+          <p>Drag the handle left or right to compare week 1 drought and weed damage against week 6 after following the
+            Toplawncare247 soil oxygenation & overseed blueprint.</p>
+        </div>
+
+        <div class="slider-container" role="region" aria-label="Interactive before and after comparison">
+          <span class="slider-tag before-tag">Day 1: Compacted & Patchy</span>
+          <span class="slider-tag after-tag">Day 42: Golf-Green Carpet</span>
+
+          <!-- After Image Layer (Background) -->
+          <div class="slider-image-layer after-layer">
+            <img src="assets/images/lawn-after.jpg" alt="Restored lush dark green thick suburban lawn" width="980"
+              height="550" loading="lazy">
+          </div>
+
+          <!-- Before Image Layer (Foreground with Clip) -->
+          <div class="slider-image-layer before-layer">
+            <img src="assets/images/lawn-before.jpg" alt="Distressed yellow brown patchy weed lawn before treatment"
+              width="980" height="550" loading="lazy">
+          </div>
+
+          <!-- Draggable Handle Bar -->
+          <div class="slider-handle-bar">
+            <div class="slider-handle-button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l-4 3 4 3m8-6l4 3-4 3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Quick Metric Pills -->
+        <div class="slider-stats-bar">
+          <div class="slider-stat-card">
+            <div class="slider-stat-val">42 Days</div>
+            <div class="slider-stat-label">Transformation Time</div>
+          </div>
+          <div class="slider-stat-card">
+            <div class="slider-stat-val">99.8%</div>
+            <div class="slider-stat-label">Weed Eradication</div>
+          </div>
+          <div class="slider-stat-card">
+            <div class="slider-stat-val">$48.50</div>
+            <div class="slider-stat-label">Total Material Cost</div>
+          </div>
+          <div class="slider-stat-card">
+            <div class="slider-stat-val">0</div>
+            <div class="slider-stat-label">Commercial Spray Vans</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Frequently Asked Questions -->
-    <section class="faq-section" id="faq">
+    <!-- The 4-Pillar Science System -->
+    <section class="pillars-section" id="pillars" aria-labelledby="pillars-title">
       <div class="container">
-        <div class="section-intro text-center">
-          <span class="section-kicker">Common Questions</span>
-          <h2 class="section-title">Practical Tool Advice & FAQs</h2>
-          <p class="section-sub">
-            Honest answers from experienced gardeners about steel, maintenance, and buying decisions.
-          </p>
+        <div class="section-header">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+            <span>The Science-Backed Framework</span>
+          </div>
+          <h2 id="pillars-title">The 4 Pillars of Permanent Turf Health</h2>
+          <p>Commercial lawn companies want you hooked on recurring monthly visits. Our framework fixes the biological
+            root cause so your grass naturally defends itself.</p>
         </div>
 
-        <div class="faq-accordion">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>Why should I pick carbon steel over stainless steel for my pruners?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>High-carbon steel (like Japanese SK-5) can be sharpened to a significantly finer, keener edge than stainless steel. When you cut living plant stems, a sharp carbon blade slices without bruising the tender vascular tissue, which lets the plant heal rapidly. Stainless steel resists rust better, but requires more frequent sharpening and leaves a rougher cut on living wood.</p>
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <article class="pillar-card">
+            <span class="pillar-num">Pillar 01</span>
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
+              </svg>
+            </div>
+            <h3>Soil Biology & Aeration</h3>
+            <p>Grass cannot drink or breathe in compacted clay. Core aeration and humic acid extract break up hardpan
+              soil, multiplying microbial root depth by 300%.</p>
+            <ul class="pillar-checklist">
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Core aeration pull-timing by region</li>
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Calibrated soil pH adjustments</li>
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Liquid aeration surfactant formulas</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="pillar-card">
+            <span class="pillar-num">Pillar 02</span>
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
+            </div>
+            <h3>Deep Infrequent Hydration</h3>
+            <p>Sprinkling for 10 minutes every day causes shallow root starvation and fungal epidemics. Train your turf
+              roots to hunt 8 inches deep with the tuna-can calibration.</p>
+            <ul class="pillar-checklist">
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> The 1-inch tuna-can measurement</li>
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Dawn watering to defeat dew fungus</li>
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Drought-dormancy vs dead diagnosis</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 3 -->
+          <article class="pillar-card">
+            <span class="pillar-num">Pillar 03</span>
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3>N-P-K Precision Feeding</h3>
+            <p>Feeding fast-release nitrogen in blistering July heat burns roots. We balance slow-release methylene
+              urea, potassium for stress, and chelated iron for dark emerald sheen.</p>
+            <ul class="pillar-checklist">
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Nitrogen rate per 1,000 sq ft rules</li>
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Autumn "root bank" winterizing</li>
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Organic iron spray for green without surge growth</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 4 -->
+          <article class="pillar-card">
+            <span class="pillar-num">Pillar 04</span>
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3>Biological Weed Immunity</h3>
+            <p>A dense turf canopy mowed at 3.5+ inches blocks 98% of sunlight from weed seeds. Pair with precision
+              soil-temp pre-emergents for zero crabgrass all summer long.</p>
+            <ul class="pillar-checklist">
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Soil temp triggers (55°F pre-emergent)</li>
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Post-emergent herbicide safety by species</li>
+              <li><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" />
+                </svg> Complete grubs and chinch bug defense</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasonal Care Timeline Matrix -->
+    <section class="seasonal-section" id="seasons" aria-labelledby="seasons-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>The 12-Month Playbook</span>
+          </div>
+          <h2 id="seasons-title">Seasonal Action Timeline</h2>
+          <p>Timing is 90% of lawn care success. Knowing the exact calendar weeks to apply products is what separates
+            average yards from golf course showstoppers.</p>
+        </div>
+
+        <!-- Season Selector Tabs -->
+        <div class="season-tabs" role="tablist" aria-label="Lawn care season selector">
+          <button type="button" class="season-tab-btn active" data-season="tab-spring" role="tab" aria-selected="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <span>Spring Awakening</span>
+          </button>
+          <button type="button" class="season-tab-btn" data-season="tab-summer" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.07 7.07l-1.41-1.41M8.34 8.34L6.93 6.93m11.73 0l-1.41 1.41M8.34 15.66l-1.41 1.41M12 7a5 5 0 100 10 5 5 0 000-10z" />
+            </svg>
+            <span>Summer Resilience</span>
+          </button>
+          <button type="button" class="season-tab-btn" data-season="tab-fall" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+            </svg>
+            <span>Fall Golden Window</span>
+          </button>
+          <button type="button" class="season-tab-btn" data-season="tab-winter" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3v18m0-18l4 4m-4-4l-4 4m0 14l4-4m-4 4l-4-4M3 12h18m-18 0l4 4m-4-4l4-4m14 0l-4 4m4-4l-4-4" />
+            </svg>
+            <span>Winter Dormancy</span>
+          </button>
+        </div>
+
+        <!-- Tab 1: Spring -->
+        <div class="season-tab-content active" id="tab-spring" role="tabpanel">
+          <div class="season-grid">
+            <div class="season-task-list">
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Pre-Emergent Barrier at 55°F Soil Temp</h4>
+                  <p>Apply prodiamine or dithiopyr as forsythia bushes bloom to prevent crabgrass, goosegrass, and
+                    foxtail from sprouting.</p>
+                </div>
+              </div>
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Spring Scalp & Cleanup</h4>
+                  <p>Lower mower one notch on warm-season lawns to shed dead brown leaf tips and encourage soil sun
+                    warming.</p>
+                </div>
+              </div>
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Sharp Mower Blade Installation</h4>
+                  <p>Dull blades shred grass tips into brown frayed edges that invite disease. Sharpen blades every 25
+                    hours of cut time.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="season-callout-card">
+              <span class="callout-badge">March – May Focus</span>
+              <h4>The Pre-Emergent Rule</h4>
+              <p>Once crabgrass germinates, pulling or spraying requires 10x more effort. The single highest return on
+                investment in lawn care is a $25 bag of pre-emergent timed to 55°F soil temperatures.</p>
+              <div style="margin-top: 1.5rem;">
+                <img src="assets/images/irrigation-dew.jpg" alt="Macro dew on grass blades"
+                  style="border-radius: var(--radius-md); max-height: 200px; width: 100%; object-fit: cover;">
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>Can I just use regular WD-40 on my garden tools?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>Standard WD-40 is a solvent designed for water displacement, not a durable long-term lubricant. It evaporates rapidly, leaving a sticky chemical film that attracts gritty soil and sand into your pruner's pivot joints. We recommend pure Japanese camellia oil, jojoba oil, or food-grade mineral oil instead. They are natural, odorless, safe for organic edible garden beds, and won't gum up.</p>
+        <!-- Tab 2: Summer -->
+        <div class="season-tab-content" id="tab-summer" role="tabpanel">
+          <div class="season-grid">
+            <div class="season-task-list">
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Raise Cut Height to Max Setting</h4>
+                  <p>Raise mowing height to 3.5 – 4.0" on Fescue/Bluegrass. Longer grass blades shade the soil, reducing
+                    water evaporation by 40%.</p>
+                </div>
+              </div>
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Grub Control Application (June / July)</h4>
+                  <p>Apply systemic chlorantraniliprole before beetle eggs hatch to protect root zones from destructive
+                    subterranean grubs.</p>
+                </div>
+              </div>
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Chelated Iron Sprays (For Dark Green Without Growth)</h4>
+                  <p>Apply liquid iron sulfate to get PGA-tour dark emerald color without forcing excessive top growth
+                    during high heat stress.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="season-callout-card">
+              <span class="callout-badge">June – August Focus</span>
+              <h4>Heat Defense & Hydration</h4>
+              <p>Never irrigate at dusk. Nighttime moisture sitting on warm grass blades is an open invitation for
+                dollar spot and brown patch fungus. Always water between 5:00 AM and 8:30 AM.</p>
             </div>
           </div>
+        </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>What is a Hori-Hori knife and why is it so popular?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>The Hori-Hori ("dig-dig" in Japanese) is a heavy steel trowel-knife hybrid. It features one sharp razor edge, one serrated edge for cutting tough roots, a semi-concave scoop for digging, and engraved depth markers for planting bulbs. It essentially replaces three separate tools and easily levers up stubborn taproots that would bend ordinary trowels.</p>
+        <!-- Tab 3: Fall -->
+        <div class="season-tab-content" id="tab-fall" role="tabpanel">
+          <div class="season-grid">
+            <div class="season-task-list">
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Core Aeration & Heavy Overseeding (Labor Day Window)</h4>
+                  <p>The single most important 3 weeks of the year. Pull 2-3 inch plugs, seed with elite cultivars, and
+                    dress with compost.</p>
+                </div>
+              </div>
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Starter Fertilizer with Mesotrione</h4>
+                  <p>Apply starter fertilizer containing weed barrier that allows grass seed to germinate while stopping
+                    winter annual weeds.</p>
+                </div>
+              </div>
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Late Autumn Nitrogen Winterizer</h4>
+                  <p>Apply quick-release urea right after top growth stops but while roots are still active. Stores
+                    carbohydrates for spring green-up.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="season-callout-card">
+              <span class="callout-badge">September – November Focus</span>
+              <h4>The Golden Season</h4>
+              <p>Warm soil + cool nights + gentle autumn rains = paradise for new seed establishment. 80% of your turf
+                density for the next year is won in these 60 days.</p>
             </div>
           </div>
+        </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>How do I stop wooden tool handles from weathering and splintering?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>Avoid thick varnish or polyurethane lacquers, which seal moisture into the wood and eventually peel. Instead, give the handle a quick rubdown with 150-grit sandpaper to remove any rough spots, then hand-rub a few spoonfuls of boiled linseed oil or pure tung oil directly into the grain. The oil polymerizes into the wood fibers, producing a soft, splinter-free finish that repels rainwater.</p>
+        <!-- Tab 4: Winter -->
+        <div class="season-tab-content" id="tab-winter" role="tabpanel">
+          <div class="season-grid">
+            <div class="season-task-list">
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Final Clean Mow (Prevent Snow Mold)</h4>
+                  <p>Cut cool-season turf down to 2.5 inches on the last mow before snow cover to prevent matted grass
+                    that breeds mold.</p>
+                </div>
+              </div>
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Winterize Irrigation Lines</h4>
+                  <p>Blow out sprinkler pipes and backflow preventers with compressed air to prevent frozen burst
+                    valves.</p>
+                </div>
+              </div>
+              <div class="season-task-item">
+                <div class="task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg></div>
+                <div class="task-details">
+                  <h4>Mower Overhaul & Oil / Plug Swap</h4>
+                  <p>Drain old fuel, change oil, replace air filter, and have mower blades professionally balanced for
+                    spring rush.</p>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>What should a beginner start with on a tight budget?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>Don't buy 15-piece sets. Start with just three essentials: a quality pair of bypass hand pruners, a forged hand trowel with a solid socket, and a pair of sturdy goatskin gloves. These three implements will handle 80% of all planting, deadheading, and maintenance tasks in small-to-medium gardens.</p>
+            <div class="season-callout-card">
+              <span class="callout-badge">December – February Focus</span>
+              <h4>Equipment & Soil Planning</h4>
+              <p>Send off a $15 county extension soil sample during winter downtime. You'll enter March with exact lime,
+                sulfur, and nutrient specs in hand.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Transparency & Legal Note Banner -->
-    <section class="legal-banner-section">
+    <!-- Master Field Guide Showcase Section -->
+    <section class="book-showcase-section" id="handbook" aria-labelledby="book-title">
       <div class="container">
-        <div class="legal-banner">
-          <div class="legal-banner-text">
-            <h3>Gardencare247 Independence & Safety Notice</h3>
-            <p>Our guides are written to be practical, educational, and safe. Review our terms of use and how we respect your privacy below.</p>
+        <div class="book-grid">
+          <div class="book-visual-frame">
+            <div class="book-mockup-wrapper">
+              <img src="assets/images/guide-book.jpg"
+                alt="Toplawncare247 comprehensive field guide hardcover edition resting on a potting bench" width="600"
+                height="600" loading="lazy">
+            </div>
           </div>
-          <div class="legal-banner-actions">
-            <button class="btn btn-outline modal-trigger" data-modal="privacyModal">Privacy Policy</button>
-            <button class="btn btn-outline modal-trigger" data-modal="termsModal">Terms of Service</button>
+
+          <div class="book-details">
+            <div class="section-badge"
+              style="background: rgba(255, 255, 255, 0.15); color: #a7f3d0; border-color: rgba(255, 255, 255, 0.2);">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+              <span>The Complete Turf Blueprint</span>
+            </div>
+            <h2 id="book-title">The Toplawncare247 Field Guide & Master Kit</h2>
+            <p class="book-subtitle">
+              Over 240 spiral-bound pages of step-by-step visual diagnoses, exact fertilizer calculations, sprinkler cup
+              calibration templates, and season-by-season checklists.
+            </p>
+
+            <div class="book-features-list">
+              <div class="book-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong>High-Res Weed Identifier Atlas</strong>
+                  <span>Spot crabgrass, poa annua, spurge, and clover in seconds</span>
+                </div>
+              </div>
+              <div class="book-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong>Spreader Calibration Matrix</strong>
+                  <span>Exact rotary dial settings for Scott's, Earthway, and Echo</span>
+                </div>
+              </div>
+              <div class="book-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong>Cool & Warm Season Seed Guide</strong>
+                  <span>NTEP university rating charts for top seed cultivars</span>
+                </div>
+              </div>
+              <div class="book-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong>Soil Chemistry Demystified</strong>
+                  <span>Easy instructions to read lab tests and fix pH with lime/sulfur</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-box">
+              <div>
+                <div class="price-display">
+                  <span class="current-price">$37</span>
+                  <span class="original-price">$89</span>
+                </div>
+                <div class="guarantee-note">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Backed by our 30-Day "Greener Lawn" Money-Back Guarantee</span>
+                </div>
+              </div>
+              <a href="#newsletter" class="btn btn-gold btn-lg">
+                <span>Instant Digital Access</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Homeowner Reviews & Testimonials -->
+    <section class="reviews-section" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Verified Transformations</span>
+          </div>
+          <h2 id="reviews-title">Loved by Neighborhood Perfectionists</h2>
+          <p>Real homeowners who fired their commercial spray services and took back their turf with science.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <article class="review-card">
+            <div>
+              <div class="review-header">
+                <div class="reviewer-avatar">BT</div>
+                <div class="reviewer-meta">
+                  <h4>Brad T.</h4>
+                  <span>Columbus, Ohio • 7,500 sq ft Tall Fescue</span>
+                </div>
+              </div>
+              <div class="review-stars" aria-label="5 stars">
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <p class="review-text">"I was paying $140 a month to a national lawn company and still had yellow
+                dandelion patches everywhere. The Toplawncare247 timing guide showed me I was putting pre-emergent down
+                3 weeks too late! One season in, people walking dogs literally stop to take photos of my stripes."</p>
+            </div>
+            <span class="review-badge">Saved $1,120 in year 1</span>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="review-card">
+            <div>
+              <div class="review-header">
+                <div class="reviewer-avatar">MC</div>
+                <div class="reviewer-meta">
+                  <h4>Marcus C.</h4>
+                  <span>Atlanta, Georgia • 11,000 sq ft Bermuda</span>
+                </div>
+              </div>
+              <div class="review-stars" aria-label="5 stars">
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <p class="review-text">"Bermuda is hungry in the Georgia heat. The handbook's spoon-feeding nitrogen
+                schedule and early spring scalping instructions turned my hard clay into a dense putting green. My kids
+                walk barefoot on it every evening."</p>
+            </div>
+            <span class="review-badge">Thick Velvet Carpet</span>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="review-card">
+            <div>
+              <div class="review-header">
+                <div class="reviewer-avatar">EL</div>
+                <div class="reviewer-meta">
+                  <h4>Elena L.</h4>
+                  <span>Philadelphia, PA • 4,200 sq ft Kentucky Blue</span>
+                </div>
+              </div>
+              <div class="review-stars" aria-label="5 stars">
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <p class="review-text">"The Fall Overseeding chapter alone saved me from completely sodding my front yard.
+                I rented a slit seeder, followed the watering schedule to a T, and in 21 days had the thickest lawn in
+                the development."</p>
+            </div>
+            <span class="review-badge">Best Lawn On Block</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Clarity & Guidance</span>
+          </div>
+          <h2 id="faq-title">Frequently Asked Questions</h2>
+          <p>Common questions about lawn recovery, seed types, pet safety, and our guide.</p>
+        </div>
+
+        <div class="faq-list">
+          <!-- Item 1 -->
+          <details class="faq-item" open>
+            <summary class="faq-trigger">
+              <span>Can I really achieve a golf-green lawn without expensive commercial services?</span>
+              <div class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-content">
+              Yes, absolutely! Commercial lawn trucks often use generic one-size-fits-all spray blends applied on rigid
+              schedules, regardless of your soil temperature or weed pressures. When you manage your own turf with our
+              4-Pillar method, you apply exact micronutrients only when roots need them, saving $800 to $2,000 every
+              single year while achieving significantly denser turf.
+            </div>
+          </details>
+
+          <!-- Item 2 -->
+          <details class="faq-item">
+            <summary class="faq-trigger">
+              <span>Are these methods safe for my dogs, cats, and young children?</span>
+              <div class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-content">
+              100% yes. Our philosophy emphasizes organic soil conditioning (humic acid, kelp, biochar, compost
+              topdressing) and mechanical weed defense (dense grass height shading soil). When selective herbicides are
+              occasionally needed for tough invasive weeds, we detail exact EPA-compliant dry-times (typically 2 to 4
+              hours) after which turf is completely pet- and family-safe.
+            </div>
+          </details>
+
+          <!-- Item 3 -->
+          <details class="faq-item">
+            <summary class="faq-trigger">
+              <span>How do I know whether I have Cool-Season or Warm-Season grass?</span>
+              <div class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-content">
+              As a general rule: If your lawn goes golden brown and goes dormant when freezing temperatures arrive, but
+              thrives in 95°F mid-summer heat, you have warm-season grass (Bermuda, Zoysia, St. Augustine). If your lawn
+              stays green through winter frosts but slows down and stresses during peak July/August heat, you have
+              cool-season grass (Kentucky Bluegrass, Tall Fescue, Perennial Rye). Our guide contains a 3-step blade
+              identifier tool.
+            </div>
+          </details>
+
+          <!-- Item 4 -->
+          <details class="faq-item">
+            <summary class="faq-trigger">
+              <span>What if my lawn is currently 80% weeds and dirt? Should I start over with sod?</span>
+              <div class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-content">
+              Sod is expensive (often $1.50 - $2.50 / sq ft installed). In 90% of cases, you do NOT need sod! Our
+              "Autumn Golden Window" renovation chapter walks you through scalping, core aeration, selective weed
+              knockdown, and heavy overseeding with zero-weed certified seed. In 4 to 6 weeks, you can completely
+              replace weed-choked dirt with brand new turf for roughly $150 in seed and starter fertilizer.
+            </div>
+          </details>
+
+          <!-- Item 5 -->
+          <details class="faq-item">
+            <summary class="faq-trigger">
+              <span>What is your 30-Day Money-Back Guarantee policy?</span>
+              <div class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-content">
+              We stand behind our agronomic science with zero risk to you. If you read the Toplawncare247 Field Guide,
+              apply the seasonal principles, and don't see noticeable improvements in turf density, color, and root
+              depth within 30 days, simply email support@toplawncare247.com for a full, courteous 100% refund.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead Capture Section -->
+    <section class="lead-capture-section" id="newsletter" aria-labelledby="lead-title">
+      <div class="container">
+        <div class="lead-card">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span>Free Seasonal Gift</span>
+          </div>
+          <h2 id="lead-title">Get The Printable 2026 Lawn Prep Calendar</h2>
+          <p>Join 45,000+ homeowners receiving our weekly soil-temperature alerts, weed-window notifications, and
+            fertilizer timing blueprints.</p>
+
+          <form class="lead-form" id="leadNewsletterForm" novalidate>
+            <label for="leadEmailInput" class="visually-hidden"
+              style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0);">Email
+              Address</label>
+            <input type="email" class="lead-input" id="leadEmailInput" placeholder="Enter your email address..."
+              required aria-label="Enter your email address">
+            <button type="submit" class="btn btn-primary" id="leadSubmitBtn">
+              <span>Send Me The Blueprint</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </form>
+
+          <div class="form-privacy-note">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <span>Zero spam. Unsubscribe anytime. Review our <a href="#legalModal" data-open-legal="privacy">Privacy
+                Policy</a> & <a href="#legalModal" data-open-legal="terms">Terms</a>.</span>
           </div>
         </div>
       </div>
@@ -674,301 +1172,391 @@
   </main>
 
   <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col brand-col">
-        <div class="footer-logo">
-          <div class="logo-mark small">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2a9 9 0 0 1 9 9c0 4.97-4.03 9-9 9A9 9 0 0 1 3 11c0-4.97 4.03-9 9-9Z"/>
-              <path d="M12 7v10"/>
-              <path d="M8 12c2-2 4-2 4-2s2 0 4 2"/>
-            </svg>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>
+            <div class="brand-icon" style="width: 30px; height: 30px;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V6m0 0l-4 4m4-4l4 4M5 21h14" />
+              </svg>
+            </div>
+            <span>Toplawncare247</span>
+          </h3>
+          <p>
+            The premier homeowner agronomic authority dedicated to science-backed turf stewardship, water conservation,
+            and emerald lawn health across all US climate zones.
+          </p>
+          <div class="footer-badge-list">
+            <div class="footer-badge-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>100% Science-Backed Field Testing</span>
+            </div>
+            <div class="footer-badge-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Eco-Conscious Pollinator Protocols</span>
+            </div>
           </div>
-          <span class="logo-title">Gardencare247</span>
         </div>
-        <p class="footer-about">
-          A practical, unsponsored guide to essential gardening tools, metallurgy, and care rituals. Built for gardeners who want tools that last.
-        </p>
-        <div class="footer-privacy-badge">
-          <span class="privacy-dot"></span>
-          <span>Zero third-party trackers • Local client storage only</span>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#calculator">Lawn Prescription Tool</a></li>
+            <li><a href="#comparison">Before & After Showcase</a></li>
+            <li><a href="#pillars">The 4 Science Pillars</a></li>
+            <li><a href="#seasons">Seasonal Timelines</a></li>
+            <li><a href="#handbook">Master Field Guide</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Policies</h4>
+          <ul class="footer-links">
+            <li><button type="button" class="footer-legal-btn" data-open-legal="privacy" id="footerPrivacyLink">Privacy
+                Policy</button></li>
+            <li><button type="button" class="footer-legal-btn" data-open-legal="terms" id="footerTermsLink">Terms of
+                Service</button></li>
+            <li><button type="button" class="footer-legal-btn" data-open-legal="privacy">Cookie Preferences</button>
+            </li>
+            <li><button type="button" class="footer-legal-btn" data-open-legal="terms">Agronomic Disclaimer</button>
+            </li>
+            <li><button type="button" class="footer-legal-btn" data-open-legal="terms">Refund & Guarantee
+                Policy</button></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Support</h4>
+          <p style="font-size: 0.88rem; color: #94a3b8; line-height: 1.6;">
+            Have questions about your lawn or need custom diagnostic guidance?
+          </p>
+          <p style="color: #ffffff; font-weight: 600; font-size: 0.95rem;">
+            support@toplawncare247.com
+          </p>
+          <p style="font-size: 0.8rem; color: #64748b;">
+            Monday – Friday, 8:00 AM – 6:00 PM EST
+          </p>
         </div>
       </div>
 
-      <div class="footer-col">
-        <h4>Tool Disciplines</h4>
-        <ul>
-          <li><a href="#essentials">Digging & Soil Prep</a></li>
-          <li><a href="#essentials">Pruning & Tree Care</a></li>
-          <li><a href="#essentials">Weeding & Aeration</a></li>
-          <li><a href="#essentials">Watering & Moisture Testing</a></li>
-          <li><a href="#essentials">Protection & Hauling</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Guides & Care</h4>
-        <ul>
-          <li><a href="#matcher">Find Your Starter Kit</a></li>
-          <li><a href="#metallurgy">Steel & Blade Metallurgy</a></li>
-          <li><a href="#maintenance">Sharpening & Oil Rituals</a></li>
-          <li><a href="#checklist">Shed Inventory Planner</a></li>
-          <li><a href="#faq">Frequently Asked Questions</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Policies & Data</h4>
-        <ul>
-          <li><button class="footer-btn modal-trigger" data-modal="privacyModal">Privacy Policy</button></li>
-          <li><button class="footer-btn modal-trigger" data-modal="termsModal">Terms of Service</button></li>
-          <li><button class="footer-btn" id="footerClearDataBtn">Clear Saved Shed Data</button></li>
-          <li><span class="footer-contact">Contact: hello@gardencare247.guide</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>&copy; 2026 Gardencare247. All rights reserved. Practical advice for growers everywhere.</p>
-      <div class="footer-bottom-links">
-        <button class="footer-btn modal-trigger" data-modal="privacyModal">Privacy</button>
-        <span>•</span>
-        <button class="footer-btn modal-trigger" data-modal="termsModal">Terms</button>
-        <span>•</span>
-        <a href="#hero" class="back-link">Back to top &uarr;</a>
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Toplawncare247. All rights reserved. Toplawncare247™ is a registered trademark.
+        </div>
+        <div class="footer-bottom-links">
+          <button type="button" class="footer-legal-btn" data-open-legal="privacy">Privacy</button>
+          <span>•</span>
+          <button type="button" class="footer-legal-btn" data-open-legal="terms">Terms</button>
+          <span>•</span>
+          <a href="#main-content" style="color: #94a3b8;">Back to top &uarr;</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- ==================== MODALS ==================== -->
-
-  <!-- Tool Detail Modal -->
-  <dialog class="app-modal" id="toolDetailModal" aria-labelledby="modalToolTitle" aria-modal="true">
-    <div class="modal-box">
-      <div class="modal-top">
-        <span class="modal-badge" id="modalToolCategory">Category</span>
-        <button class="modal-close-icon" id="closeToolModalBtn" aria-label="Close tool details">&times;</button>
-      </div>
-
-      <div class="modal-scrollable">
-        <div class="modal-hero-row">
-          <div class="modal-icon-wrap" id="modalToolIcon">
-            <!-- Injected via app.js -->
-          </div>
-          <div>
-            <h3 id="modalToolTitle" class="modal-heading">Tool Name</h3>
-            <p class="modal-subtitle" id="modalToolTagline">Material specs</p>
-          </div>
+  <!-- ==========================================================================
+       LEGAL MODAL: PRIVACY POLICY & TERMS OF SERVICE
+       Native accessible <dialog> with declarative light-dismiss and tab switching
+       ========================================================================== -->
+  <dialog class="legal-modal" id="legalModal" closedby="any" aria-labelledby="legalModalTitle">
+    <div class="modal-header">
+      <div class="modal-title-area">
+        <div class="modal-badge-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
         </div>
-
-        <div class="modal-specs-list">
-          <div class="spec-entry">
-            <span class="spec-name">Blade / Steel</span>
-            <strong class="spec-data" id="modalToolSteel">SK-5 High Carbon</strong>
-          </div>
-          <div class="spec-entry">
-            <span class="spec-name">Handle Material</span>
-            <strong class="spec-data" id="modalToolHandle">FSC Ash Wood</strong>
-          </div>
-          <div class="spec-entry">
-            <span class="spec-name">Durability Rating</span>
-            <strong class="spec-data" id="modalToolDurability">9.8 / 10</strong>
-          </div>
-          <div class="spec-entry">
-            <span class="spec-name">Ergonomics</span>
-            <strong class="spec-data" id="modalToolErgo">5 / 5</strong>
-          </div>
-        </div>
-
-        <div class="modal-section">
-          <h4>Why It Is Essential</h4>
-          <p id="modalToolDeepDesc">Detailed description...</p>
-        </div>
-
-        <div class="modal-section tip-section">
-          <h4>Gardener's Field Tip</h4>
-          <p id="modalToolProTip">Pro tip...</p>
-        </div>
-
-        <div class="modal-section">
-          <h4>Care & Sharpening</h4>
-          <p id="modalToolCareNotes">Care notes...</p>
+        <div>
+          <h2 id="legalModalTitle">Privacy Policy</h2>
+          <p>Effective Date: January 1, 2026 • Version 2.4</p>
         </div>
       </div>
-
       <div class="modal-actions">
-        <button class="btn btn-primary" id="modalToggleShedBtn">
-          <span>Add to My Shed</span>
+        <button type="button" class="modal-print-btn" id="printLegalBtn" aria-label="Print Document"
+          title="Print this document">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z" />
+          </svg>
         </button>
-        <button class="btn btn-outline" id="modalCloseSecondaryBtn">Close</button>
+        <button type="button" class="modal-close-btn" id="closeLegalBtn" aria-label="Close dialog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
       </div>
     </div>
-  </dialog>
 
-  <!-- Privacy Policy Modal -->
-  <dialog class="app-modal legal-modal" id="privacyModal" aria-labelledby="privacyModalTitle" aria-modal="true">
-    <div class="modal-box">
-      <div class="modal-top">
-        <span class="modal-badge">Data Transparency</span>
-        <button class="modal-close-icon close-legal-btn" aria-label="Close Privacy Policy">&times;</button>
-      </div>
+    <!-- Tab Bar for easy toggling between Privacy Policy & Terms of Service -->
+    <div class="modal-tab-bar" role="tablist">
+      <button type="button" class="modal-tab-btn active" id="tabPrivacyBtn" role="tab" aria-selected="true">
+        Privacy Policy
+      </button>
+      <button type="button" class="modal-tab-btn" id="tabTermsBtn" role="tab" aria-selected="false">
+        Terms of Service
+      </button>
+    </div>
 
-      <div class="modal-scrollable legal-text">
-        <h2 id="privacyModalTitle">Gardencare247 Privacy Policy</h2>
-        <p class="legal-date">Last Updated: October 2026 • Clear, Honest Privacy</p>
+    <!-- Scrollable Body -->
+    <div class="modal-body" id="legalModalBody">
+      <!-- PRIVACY POLICY SECTION -->
+      <section id="legalPrivacySection" aria-label="Privacy Policy Details">
+        <div class="legal-callout">
+          <strong>Summary for Homeowners:</strong> We treat your personal data with the exact same care we treat
+          pristine turf. We never sell your personal contact info, we do not spam, and your grass diagnostic
+          measurements are used solely to generate your custom lawn care blueprints.
+        </div>
 
-        <section>
-          <h3>1. Our Privacy Philosophy: No Tracking, No Selling</h3>
+        <div class="legal-section-block">
+          <h3>1. Introduction & Overview</h3>
           <p>
-            At <strong>Gardencare247</strong>, we believe in practical tools and respecting your privacy. We do not sell, rent, monetize, or share your personal data with advertising networks or data brokers.
+            Welcome to Toplawncare247 ("we," "our," or "us"). We respect your privacy and are committed to protecting
+            the personal information you share with us through our website, mobile tools, lawn diagnostic engines, and
+            digital guide distributions. This Privacy Policy outlines what data we collect, how we process it, and your
+            statutory rights.
           </p>
-        </section>
+        </div>
 
-        <section>
-          <h3>2. What Information is Stored & How It Works</h3>
-          <p>Gardencare247 is designed as a client-side educational guide:</p>
+        <div class="legal-section-block">
+          <h3>2. Information We Collect</h3>
+          <p>We collect information you provide directly, as well as limited technical telemetry required to provide
+            customized agronomic recommendations:</p>
           <ul>
-            <li><strong>Local Browser Storage (localStorage):</strong> When you check off tools in the Shed Checklist or save a kit in the Starter Finder, those selections remain strictly in your browser's private local storage. They are never sent to our servers.</li>
-            <li><strong>No Tracking Cookies:</strong> We do not set third-party marketing cookies, user profiling tags, or cross-site fingerprinting scripts.</li>
-            <li><strong>Server Logs:</strong> Standard web hosting servers may record basic, anonymized request logs (such as browser type and timestamp) solely for uptime monitoring and DDOS defense. These are automatically rotated and purged.</li>
+            <li><strong>Contact Details:</strong> Your name, email address, and optional phone number when you request
+              our seasonal blueprints or purchase our field guides.</li>
+            <li><strong>Lawn Diagnostic Information:</strong> Approximate square footage, geographic location or USDA
+              Hardiness zone, dominant grass species (e.g., Fescue, Bermuda, Zoysia), sunlight hours, and soil
+              composition selections.</li>
+            <li><strong>Transactional Data:</strong> Payment verification tokens handled via encrypted, PCI-DSS
+              compliant third-party payment gateways (we never store raw credit card numbers on our servers).</li>
+            <li><strong>Browsing & Usage Telemetry:</strong> Device specifications, browser type, interaction logs with
+              our interactive calculators, and anonymized aggregate analytics.</li>
           </ul>
-        </section>
+        </div>
 
-        <section>
-          <h3>3. Complete Control Over Your Data</h3>
-          <p>
-            You can erase all saved shed tools and checklist preferences at any time by clicking the <em>"Clear Saved Shed Data"</em> link in the footer, or by clearing your browser cache.
+        <div class="legal-section-block">
+          <h3>3. How We Use Your Information</h3>
+          <p>We utilize the collected information strictly for legitimate business and agronomic purposes, including:
           </p>
-        </section>
+          <ul>
+            <li>Generating and emailing your customized 52-week lawn care schedule, soil temperature notifications, and
+              seed recommendations.</li>
+            <li>Fulfilling orders for digital handbooks, printed field guides, and toolkits.</li>
+            <li>Providing responsive customer support for lawn diagnosis and troubleshooting questions.</li>
+            <li>Improving our website performance, calculator accuracy, and user experience.</li>
+            <li>Complying with applicable legal, accounting, and regulatory obligations.</li>
+          </ul>
+        </div>
 
-        <section>
-          <h3>4. External Links</h3>
+        <div class="legal-section-block">
+          <h3>4. Information Sharing & Third Parties</h3>
           <p>
-            Gardencare247 may link to university agricultural extensions, botanical gardens, or toolmakers for reference. We do not control the privacy practices of external websites.
+            <strong>We do not sell, rent, or trade your personal data.</strong> We may share necessary details only with
+            vetted service providers operating under strict confidentiality contracts, such as:
           </p>
-        </section>
+          <ul>
+            <li>Secure email service providers (for sending your seasonal lawn alerts and guides).</li>
+            <li>PCI-compliant payment processors (e.g., Stripe, PayPal).</li>
+            <li>Fulfillment partners (for shipping physical hardcover field guides, when ordered).</li>
+          </ul>
+        </div>
 
-        <section>
-          <h3>5. Contact Us</h3>
+        <div class="legal-section-block">
+          <h3>5. Cookies & Tracking Technologies</h3>
           <p>
-            For any questions regarding our privacy practices, email us at:
-            <br><strong>privacy@gardencare247.guide</strong>
+            We use essential cookies to maintain session preferences (such as your chosen grass variety and calculator
+            settings) and lightweight analytics cookies to understand how visitors engage with our guides. You can
+            manage or disable cookies directly in your browser settings.
           </p>
-        </section>
-      </div>
+        </div>
 
-      <div class="modal-actions">
-        <button class="btn btn-primary close-legal-btn">Close Privacy Policy</button>
-      </div>
-    </div>
-  </dialog>
+        <div class="legal-section-block">
+          <h3>6. Your Privacy Rights (CCPA, GDPR & State Laws)</h3>
+          <p>Regardless of your location, we afford you clear rights regarding your personal information:</p>
+          <ul>
+            <li><strong>Right to Access:</strong> You may request a copy of all personal records we hold regarding your
+              profile.</li>
+            <li><strong>Right to Deletion:</strong> You may request the permanent erasure of your email address and
+              profile from our databases.</li>
+            <li><strong>Right to Opt-Out:</strong> Every email newsletter contains a one-click unsubscribe mechanism
+              that immediately removes you from future mailings.</li>
+          </ul>
+        </div>
 
-  <!-- Terms of Service Modal -->
-  <dialog class="app-modal legal-modal" id="termsModal" aria-labelledby="termsModalTitle" aria-modal="true">
-    <div class="modal-box">
-      <div class="modal-top">
-        <span class="modal-badge">Terms & Safety</span>
-        <button class="modal-close-icon close-legal-btn" aria-label="Close Terms of Service">&times;</button>
-      </div>
+        <div class="legal-section-block">
+          <h3>7. Contact Information</h3>
+          <p>For questions or requests concerning your privacy rights, please contact our Data Protection Officer at:
+          </p>
+          <p><strong>Email:</strong> <a href="mailto:privacy@toplawncare247.com">privacy@toplawncare247.com</a><br>
+            <strong>Address:</strong> Toplawncare247 Media LLC, Legal Compliance Dept, 440 Fairway Commons, Suite 200,
+            Wilmington, DE 19801
+          </p>
+        </div>
+      </section>
 
-      <div class="modal-scrollable legal-text">
-        <h2 id="termsModalTitle">Gardencare247 Terms of Service</h2>
-        <p class="legal-date">Last Updated: October 2026 • Please read carefully before using tools</p>
+      <!-- TERMS OF SERVICE SECTION -->
+      <section id="legalTermsSection" style="display: none;" aria-label="Terms of Service Details">
+        <div class="legal-callout">
+          <strong>Key Highlights:</strong> Our guides provide educational agronomic science. While our methods have
+          revitalized thousands of lawns, turf outcomes depend on unpredictable natural elements (weather, rainfall,
+          local soils). Always handle lawn chemicals and power equipment according to manufacturer safety labels.
+        </div>
 
-        <section>
+        <div class="legal-section-block">
           <h3>1. Acceptance of Terms</h3>
           <p>
-            By accessing or using the <strong>Gardencare247</strong> website and its tools guides, you agree to these Terms of Service. If you do not agree, please do not use the site.
+            By accessing or using the Toplawncare247 website, purchasing our guides, or utilizing our interactive
+            calculators, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you
+            disagree with any portion of these terms, please discontinue use of our site and materials immediately.
           </p>
-        </section>
+        </div>
 
-        <section>
-          <h3>2. Important Tool Safety Notice</h3>
-          <div class="warning-callout">
-            <strong>Safety Warning:</strong>
-            <p>
-              Garden tools—such as bypass pruners, hori-hori knives, loppers, pruning saws, and garden spades—feature sharp steel blades and points. Improper handling can cause serious lacerations, puncture wounds, and eye injuries.
-            </p>
-          </div>
+        <div class="legal-section-block">
+          <h3>2. Agronomic & Chemical Safety Disclaimer</h3>
+          <p>
+            The advice, seasonal schedules, fertilizer ratios, and herbicide information provided by Toplawncare247 are
+            for educational and informational purposes only. Local environmental conditions, soil pathogens, drought
+            restrictions, and microclimates vary substantially across North America.
+          </p>
           <ul>
-            <li><strong>Protective Gear:</strong> Always wear puncture-resistant gloves and appropriate eye protection when using pruning, cutting, or soil-penetrating tools.</li>
-            <li><strong>Biological Safety:</strong> Soil contains bacteria and fungi, including tetanus organisms. Keep your tetanus vaccination up to date and clean any cuts immediately.</li>
-            <li><strong>Educational Purpose:</strong> All sharpening angles and technique guides on Gardencare247 are provided for educational purposes. Users bear full personal responsibility for safe tool operation.</li>
+            <li><strong>Label Law:</strong> It is a violation of Federal law (FIFRA) to apply any pesticide, herbicide,
+              or fertilizer in a manner inconsistent with its product packaging label. <strong>The product label is the
+                law.</strong> Always read, understand, and adhere to manufacturer instructions.</li>
+            <li><strong>Safety Equipment:</strong> Always wear proper personal protective equipment (PPE), including
+              chemical-resistant gloves, eye protection, and long pants when mixing or applying lawn chemicals.</li>
+            <li><strong>Runoff Prevention:</strong> Avoid spreading fertilizer or pesticides onto impervious surfaces
+              (sidewalks, driveways, storm drains) to safeguard local waterways and pollinator populations.</li>
           </ul>
-        </section>
+        </div>
 
-        <section>
-          <h3>3. Educational Disclaimer & Limitation of Liability</h3>
+        <div class="legal-section-block">
+          <h3>3. Intellectual Property Rights</h3>
           <p>
-            Content on Gardencare247 is provided "as is" without warranties of any kind. Gardencare247 and its authors are not liable for any personal injury, tool breakage, or property damage resulting from techniques or products referenced on this site.
+            All content, including text, photographs, diagnostic algorithms, before/after graphics, logo emblems,
+            illustrations, and digital downloads on Toplawncare247 are the proprietary intellectual property of
+            Toplawncare247 Media LLC and are protected by United States and international copyright laws. You are
+            granted a personal, non-commercial, non-transferable license to view and print guides for your own private
+            residential lawn. Reproduction, redistribution, or resale of our handbooks is strictly prohibited.
           </p>
-        </section>
+        </div>
 
-        <section>
-          <h3>4. Intellectual Property</h3>
+        <div class="legal-section-block">
+          <h3>4. Purchases, Pricing & 30-Day Guarantee</h3>
           <p>
-            All original text, interactive guides, and illustrations on Gardencare247 are protected under copyright. You may print copies of checklists for personal, non-commercial gardening use.
+            All prices are stated in US Dollars ($ USD). Digital guide access is delivered immediately upon transaction
+            completion.
           </p>
-        </section>
-
-        <section>
-          <h3>5. Contact</h3>
           <p>
-            For legal inquiries: <strong>legal@gardencare247.guide</strong>
+            <strong>The 30-Day Greener Lawn Guarantee:</strong> If you purchase any Toplawncare247 handbook or toolkit
+            and are not satisfied with your lawn's progress after applying our core framework, you may contact
+            support@toplawncare247.com within 30 days of purchase for a 100% full refund of the digital purchase price.
+            Physical handbook returns must be received in undamaged condition.
           </p>
-        </section>
-      </div>
+        </div>
 
-      <div class="modal-actions">
-        <button class="btn btn-primary close-legal-btn">Accept & Close</button>
-      </div>
+        <div class="legal-section-block">
+          <h3>5. Limitation of Liability</h3>
+          <p>
+            In no event shall Toplawncare247, its agronomists, founders, or affiliates be liable for any indirect,
+            incidental, special, or consequential damages resulting from turf discoloration, mechanical mower injuries,
+            chemical misuse, weather catastrophes, local water municipal fines, or any other outcome resulting from your
+            lawn maintenance practices.
+          </p>
+        </div>
+
+        <div class="legal-section-block">
+          <h3>6. Governing Law & Dispute Resolution</h3>
+          <p>
+            These Terms shall be governed and interpreted under the laws of the State of Delaware, without regard to its
+            conflict of law provisions. Any legal claim arising from these terms shall be resolved exclusively in the
+            state or federal courts located in New Castle County, Delaware.
+          </p>
+        </div>
+
+        <div class="legal-section-block">
+          <h3>7. Customer Support Inquiries</h3>
+          <p>
+            For assistance with your account, order status, or guarantee claims, please contact our support desk:
+          </p>
+          <p><strong>Email:</strong> <a href="mailto:support@toplawncare247.com">support@toplawncare247.com</a><br>
+            <strong>Operating Hours:</strong> Monday – Friday, 8:00 AM – 6:00 PM EST
+          </p>
+        </div>
+      </section>
     </div>
-  </dialog>
 
-  <!-- Shed Drawer Modal -->
-  <dialog class="app-modal shed-modal" id="shedDrawerModal" aria-labelledby="shedModalTitle" aria-modal="true">
-    <div class="modal-box">
-      <div class="modal-top">
-        <div class="shed-modal-title">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
-          <h3 id="shedModalTitle">Your Saved Shed Toolkit</h3>
-        </div>
-        <button class="modal-close-icon" id="closeShedModalBtn" aria-label="Close shed drawer">&times;</button>
+    <!-- Modal Footer -->
+    <div class="modal-footer">
+      <div class="modal-footer-contact">
+        Questions? Contact <a href="mailto:legal@toplawncare247.com">legal@toplawncare247.com</a>
       </div>
-
-      <div class="modal-scrollable">
-        <div class="shed-drawer-stats">
-          <span id="shedItemsCountText">0 tools collected in your personal shed</span>
-          <button class="text-btn danger-link" id="clearShedDrawerBtn">Empty Shed</button>
-        </div>
-
-        <div class="shed-items-list" id="shedItemsList">
-          <!-- Dynamically populated -->
-        </div>
-
-        <div class="shed-empty-notice" id="shedEmptyNotice">
-          <h4>Your shed is currently empty</h4>
-          <p>Browse the tool guide or use the Starter Kit Finder above to assemble your foundational tools.</p>
-          <a href="#essentials" class="btn btn-outline" id="shedBrowseBtn">Browse Tools</a>
-        </div>
-      </div>
-
-      <div class="modal-actions">
-        <button class="btn btn-primary" id="exportShedSummaryBtn">
-          <span>Copy Shed Inventory</span>
+      <div>
+        <button type="button" class="btn btn-sm btn-primary" onclick="document.getElementById('legalModal').close()">
+          I Understand & Close
         </button>
-        <button class="btn btn-outline" id="closeShedSecondaryBtn">Close</button>
       </div>
     </div>
   </dialog>
 
-  <!-- Toast Notification -->
-  <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
-    <span class="toast-check">✓</span>
-    <span class="toast-message" id="toastMessage">Checklist saved</span>
-  </div>
+  <!-- ==========================================================================
+       LEAD CONFIRMATION & BLUEPRINT DOWNLOAD MODAL
+       ========================================================================== -->
+  <dialog class="lead-modal" id="leadModal" closedby="any" aria-labelledby="leadModalTitle">
+    <div class="lead-modal-content">
+      <div class="lead-success-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <h2 id="leadModalTitle" style="font-size: 1.6rem; margin-bottom: 0.5rem;">Your Lawn Blueprint is Ready!</h2>
+      <p style="color: var(--color-text-muted); font-size: 0.95rem;">
+        We've dispatched the 2026 Seasonal Prep Schedule & Pre-Emergent Trigger Map to:
+      </p>
+      <div style="font-weight: 700; color: var(--color-primary-dark); font-size: 1.1rem; margin: 0.5rem 0;"
+        id="leadUserEmailDisplay">
+        homeowner@example.com
+      </div>
 
-  <script src="app.js"></script>
+      <div class="download-preview-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <line x1="16" y1="13" x2="8" y2="13" />
+          <line x1="16" y1="17" x2="8" y2="17" />
+          <polyline points="10 9 9 9 8 9" />
+        </svg>
+        <div>
+          <div style="font-weight: 700; font-size: 0.95rem;">Toplawncare247-2026-Blueprint.pdf</div>
+          <div style="font-size: 0.78rem; color: var(--color-text-muted);">PDF Document • 14 Pages • High Resolution
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 0.75rem; margin-top: 1.75rem; flex-wrap: wrap;">
+        <button type="button" class="btn btn-primary"
+          onclick="alert('Downloading your Toplawncare247 2026 Blueprint PDF...'); document.getElementById('leadModal').close();">
+          <span>Download PDF Instantly</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+        </button>
+        <button type="button" class="btn btn-secondary" id="closeLeadModalBtn">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- JavaScript Module Loader -->
+  <script type="module" src="js/app.js"></script>
 </body>
+
 </html>
